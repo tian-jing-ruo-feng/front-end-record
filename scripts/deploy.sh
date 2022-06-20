@@ -3,7 +3,7 @@
  # @Author: tian-jing-ruo-feng 2236117954@qq.com
  # @Date: 2022-06-20 11:25:26
  # @LastEditors: tian-jing-ruo-feng 2236117954@qq.com
- # @LastEditTime: 2022-06-20 14:45:13
+ # @LastEditTime: 2022-06-20 14:46:27
  # @FilePath: /leaning-doc/scripts/deploy.sh
  # @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 ### 
@@ -30,11 +30,11 @@ git config --global user.name "$GH_NAME" >/dev/null 2>&1
 # 初始化临时仓库
 git init
 # 同远程仓库建立关联
-git remote add --fetch origin "$remote"
+git remote add --fetch docs "$remote"
 
 # 切换gh-pages分支
 # 验证git 是否存在gh-pages分支， 如果存在则切换 不存在则创建一个空历史分支
-if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
+if git rev-parse --verify docs/gh-pages >/dev/null 2>&1; then
   # 检出分支
   git checkout gh-pages
   # 删除掉旧的文件内容
