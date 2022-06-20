@@ -25,7 +25,7 @@ jobs:
           key: node_dependencies
       - run:
           name: Build
-          command: npm run build
+          command: npm run docs:build
       - run:
           name: Auth Deploy
           # 设置文件权限
