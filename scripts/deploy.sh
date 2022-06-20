@@ -3,7 +3,7 @@
  # @Author: tian-jing-ruo-feng 2236117954@qq.com
  # @Date: 2022-06-20 11:25:26
  # @LastEditors: tian-jing-ruo-feng 2236117954@qq.com
- # @LastEditTime: 2022-06-20 13:16:48
+ # @LastEditTime: 2022-06-20 13:29:42
  # @FilePath: /leaning-doc/scripts/deploy.sh
  # @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 ### 
@@ -44,7 +44,8 @@ else
 fi
 
 # 将构建好的文件目录拷贝进去
-cp -a "../${STATIC_RESOURCE}/." .
+# cp -a "../${STATIC_RESOURCE}/." .
+cp -a "./${STATIC_RESOURCE}/." .
 # 将所有文件添加到git
 git add -A
 # 添加提交内容
