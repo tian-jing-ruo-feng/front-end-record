@@ -3,7 +3,7 @@
  # @Author: tian-jing-ruo-feng 2236117954@qq.com
  # @Date: 2022-06-20 11:25:26
  # @LastEditors: tian-jing-ruo-feng 2236117954@qq.com
- # @LastEditTime: 2022-06-20 14:33:45
+ # @LastEditTime: 2022-06-20 14:45:13
  # @FilePath: /leaning-doc/scripts/deploy.sh
  # @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 ### 
@@ -51,7 +51,7 @@ git add -A
 # 添加提交内容
 git commit --allow-empty -m "Deploy to GitHub pages [ci skip]" # ci skip 是为了跳过ci的构建
 # 推送文件
-git push --force --quiet origin gh-pages
+git push --force --quiet docs gh-pages
 # 资源回收，删除临时分支与目录
 cd ..
 rm -rf git-pages-rp
