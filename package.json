@@ -15,6 +15,22 @@
   "author": "hepeng",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-config-vuepress": "^3.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-vue": "^7.8.0",
+    "node-sass": "^5.0.0",
+    "prettier": "2.2.1",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^11.0.1",
     "vuepress": "^1.9.7"
   }
 }
