@@ -9,7 +9,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "cfc585db-9f52-499c-af3c-275c95a538ed"
+            - "f89df3a2-679b-4112-8191-4f0c9cbd3b4e"
       - checkout
       # 使用node_modules缓存
       - restore_cache:
