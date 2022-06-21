@@ -514,16 +514,16 @@ const sidebar = {
   //     children: genSidebarConfig('about', { ...siderBarOptions, hasSub: false })
   //   }
   // ],
-  '/designmode': [
-    {
-      title: '测试案例',
-      collapsable: false,
-      children: genSidebarConfig('designmode', {
-        ...siderBarOptions,
-        hasSub: false
-      })
-    }
-  ],
+  // '/designmode': [
+  //   {
+  //     title: '测试案例',
+  //     collapsable: false,
+  //     children: genSidebarConfig('designmode', {
+  //       ...siderBarOptions,
+  //       hasSub: false
+  //     })
+  //   }
+  // ],
   '/': [
     {
       title: '首页',
