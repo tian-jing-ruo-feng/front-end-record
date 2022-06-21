@@ -1,9 +1,10 @@
 ---
 home: true
-heroImage:
-tagline:
-actionText:
-actionLink:
+heroImage: ../img/index.png
+heroText: 天净若风 の 前端笔记
+tagline: 开始便不能停下♕
+actionText: 基础知识
+actionLink: /basic/node/
 features:
   - title: 进阶·技术积累
     details: 每周重点攻克一个前端知识重难点，走向高级前端之路！

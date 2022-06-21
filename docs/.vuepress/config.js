@@ -440,18 +440,14 @@ const nav = [
 ]
 
 const sidebar = {
-  // '/basic/': [
-  //   {
-  //     title: 'Node.js进阶',
-  //     collapsable: false,
-  //     children: genSidebarConfig('basic/node', siderBarOptions)
-  //   },
-  //   {
-  //     title: 'TypeScript',
-  //     collapsable: false,
-  //     children: genSidebarConfig('basic/ts', siderBarOptions)
-  //   }
-  // ],
+  '/basic/': [
+    {
+      title: 'Node.js进阶',
+      collapsable: false,
+      children: genSidebarConfig('basic/node', siderBarOptions)
+    }
+    // {
+  ],
   // '/project/': [
   //   {
   //     title: '社区PC',
@@ -540,7 +536,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@public': './public'
+        '@public': resolve('./public')
       }
     }
   },
