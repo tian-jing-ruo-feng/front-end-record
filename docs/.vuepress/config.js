@@ -522,7 +522,7 @@ const sidebar = {
 module.exports = {
   title: '天净若风 ⚒ 前端笔记',
   description: '天净若风的记录前端',
-  base: '/fonntEnd-record/',
+  base: '/front-end-record/',
   configureWebpack: {
     resolve: {
       alias: {
