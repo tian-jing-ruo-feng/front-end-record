@@ -15,6 +15,10 @@ const nav = [
     text: 'JavaScript设计模式',
     items: [
       {
+        text: '灵活的JavaScript',
+        link: '/designmode/intro/'
+      },
+      {
         text: '创建型设计模式',
         items: [
           {
@@ -530,7 +534,7 @@ const sidebar = {
 }
 
 module.exports = {
-  title: '天净若风 ⚒ 前端笔记',
+  title: '天净若风 の 前端笔记',
   description: '天净若风的记录前端',
   base: '/front-end-record/',
   configureWebpack: {
