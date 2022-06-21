@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: ../img/index.png
+heroImage: /img/index.png
 heroText: 天净若风 の 前端笔记
 tagline: 开始便不能停下♕
 actionText: 基础知识
