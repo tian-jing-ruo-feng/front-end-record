@@ -15,8 +15,173 @@ const nav = [
     text: 'JavaScript设计模式',
     items: [
       {
-        text: '工厂模式',
-        link: ''
+        text: '创建型设计模式',
+        items: [
+          {
+            text: '工厂模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '建造者模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '原型模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '单例模式',
+            link: '/designmode/factory-mode'
+          }
+        ]
+      },
+      {
+        text: '结构型设计模式',
+        items: [
+          {
+            text: '外观模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '适配器模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '代理模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '装饰者模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '桥接模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '组合模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '享元模式',
+            link: '/designmode/factory-mode'
+          }
+        ]
+      },
+      {
+        text: '行为型设计模式',
+        items: [
+          {
+            text: '模版方法模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '观察者模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '状态模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '策略模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '职责链模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '命令模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '访问者模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '中介者者模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '备忘录模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '迭代器模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '解释器模式',
+            link: '/designmode/factory-mode'
+          }
+        ]
+      },
+      {
+        text: '技巧型设计模式',
+        items: [
+          {
+            text: '链模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '委托模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '数据访问',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '节流模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '简单模版模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '惰性模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '参与者模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '等待者模式',
+            link: '/designmode/factory-mode'
+          }
+        ]
+      },
+      {
+        text: '架构型设计模式',
+        items: [
+          {
+            text: '同步模块模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: '异步模块模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: 'Widget模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: 'MVC模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: 'MVP模式',
+            link: '/designmode/factory-mode'
+          },
+          {
+            text: 'MVVM模式',
+            link: '/designmode/factory-mode'
+          }
+        ]
       }
     ]
   },
