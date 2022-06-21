@@ -502,12 +502,22 @@ const sidebar = {
   //     children: genSidebarConfig('course/pull-request', siderBarOptions)
   //   }
   // ],
-  '/about/': [
+  // '/about/': [
+  //   {
+  //     title: '关于我们',
+  //     collapsable: false,
+  //     // children: ['', '01-课程评价', '02-招募英才']
+  //     children: genSidebarConfig('about', { ...siderBarOptions, hasSub: false })
+  //   }
+  // ],
+  '/designmode': [
     {
-      title: '关于我们',
+      title: '测试案例',
       collapsable: false,
-      // children: ['', '01-课程评价', '02-招募英才']
-      children: genSidebarConfig('about', { ...siderBarOptions, hasSub: false })
+      children: genSidebarConfig('designmode', {
+        ...siderBarOptions,
+        hasSub: false
+      })
     }
   ],
   '/': [

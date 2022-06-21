@@ -11,7 +11,7 @@ features:
     details: 阅读专业书籍之外的世界，记录不一样的世界和你我
   - title: 每日·壹题
     details: 工作日每天搞定一道大厂前端面试题，再回头，感谢不一样的自己！
-    footer: Made by Mr.tian with ❤️
+footer: Made by Mr.tian with ❤️
 ---
 
 # 里程碑
