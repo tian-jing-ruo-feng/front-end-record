@@ -142,7 +142,3 @@ check.checkName().checkAge()
 ::: details
 对于使用 new 关键子创建的对象不能使用这些静态方法
 :::
-
-```
-
-```

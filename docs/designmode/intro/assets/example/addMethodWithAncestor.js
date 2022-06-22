@@ -38,3 +38,7 @@ console.log(check.__proto__, 'check.__proto__') // Methods { checkName: [Functio
 check.checkName().checkAge()
 // 验证姓名
 // 验证年龄
+
+console.log(process.cwd())
+
+// #region snippet
