@@ -12,6 +12,14 @@ const nav = [
     link: '/'
   },
   {
+    text: 'AntV X6',
+    link: '/antvx6/'
+  },
+  {
+    text: 'TypeScript',
+    link: '/ts/'
+  },
+  {
     text: 'JavaScript设计模式',
     items: [
       {
@@ -189,236 +197,6 @@ const nav = [
       }
     ]
   },
-  // {
-  //   text: '基础强化',
-  //   items: [
-  //     {
-  //       text: '环境搭建',
-  //       items: [
-  //         {
-  //           text: 'Vue',
-  //           link: '/basic/vue/'
-  //         },
-  //         {
-  //           text: 'Node.js',
-  //           link: '/basic/node/'
-  //         },
-  //         {
-  //           text: '调试技巧',
-  //           link: '/basic/debug/'
-  //         },
-  //         {
-  //           text: 'Docker',
-  //           link: '/basic/docker/'
-  //         }
-  //       ]
-  //     },
-  //     {
-  //       text: '语言基础',
-  //       items: [
-  //         {
-  //           text: 'TypeScript',
-  //           link: '/basic/ts/'
-  //         },
-  //         {
-  //           text: 'Dart',
-  //           link: '/basic/dart/'
-  //         }
-  //       ]
-  //     },
-  //     {
-  //       text: '数据库',
-  //       items: [
-  //         {
-  //           text: 'NoSQL',
-  //           link: '/basic/nosql/'
-  //         },
-  //         {
-  //           text: 'mongoDB',
-  //           link: '/basic/mongo/'
-  //         },
-  //         {
-  //           text: 'Redis',
-  //           link: '/basic/redis/'
-  //         }
-  //       ]
-  //     }
-  //   ]
-  // },
-  // {
-  //   text: 'DevOps',
-  //   items: [
-  //     {
-  //       text: '效率工具',
-  //       items: [
-  //         {
-  //           text: 'Jenkins',
-  //           link: '/devops/jenkins/'
-  //         }
-  //       ]
-  //     },
-  //     {
-  //       text: '团队协同',
-  //       items: [
-  //         {
-  //           text: 'gitlab',
-  //           link: '/devops/gitlab/'
-  //         },
-  //         {
-  //           text: 'showDoc',
-  //           link: '/devops/showdoc/'
-  //         },
-  //         {
-  //           text: 'DOClever',
-  //           link: '/devops/doclever/'
-  //         }
-  //       ]
-  //     },
-  //     {
-  //       text: '容器化',
-  //       items: [
-  //         {
-  //           text: 'Docker进阶',
-  //           link: '/devops/docker-advance/'
-  //         },
-  //         {
-  //           text: 'Kubernetes',
-  //           link: '/devops/k8s/'
-  //         }
-  //       ]
-  //     }
-  //   ]
-  // },
-  // {
-  //   text: '全端项目',
-  //   items: [
-  //     {
-  //       text: '社区项目',
-  //       items: [
-  //         {
-  //           text: '社区PC',
-  //           link: '/project/community-pc/'
-  //         },
-  //         {
-  //           text: '管理后台',
-  //           link: '/project/community-admin/'
-  //         },
-  //         {
-  //           text: 'WebApp',
-  //           link: '/project/community-webapp/'
-  //         }
-  //       ]
-  //     },
-  //     {
-  //       text: '多平台+跨端',
-  //       items: [
-  //         {
-  //           text: '微信小程序',
-  //           link: '/project/community-miniapp/'
-  //         },
-  //         {
-  //           text: 'Flutter 2.0',
-  //           link: '/project/community-flutter/'
-  //         },
-  //         {
-  //           text: 'Electron桌面端',
-  //           link: '/project/community-electron/'
-  //         }
-  //       ]
-  //     },
-  //     {
-  //       text: 'React世界',
-  //       items: [
-  //         {
-  //           text: 'React',
-  //           link: '/project/react/'
-  //         }
-  //       ]
-  //     }
-  //   ]
-  // },
-  // {
-  //   text: '前端面试',
-  //   items: [
-  //     {
-  //       text: '笔试',
-  //       items: [
-  //         {
-  //           text: '分类笔试题',
-  //           link: '/interview/types/'
-  //         },
-  //         {
-  //           text: '笔记技巧',
-  //           link: '/interview/techs/'
-  //         }
-  //       ]
-  //     },
-  //     {
-  //       text: '面试技巧',
-  //       items: [
-  //         {
-  //           text: '技术面',
-  //           link: '/interview/basic/'
-  //         },
-  //         {
-  //           text: '项目面',
-  //           link: '/interview/projects/'
-  //         },
-  //         {
-  //           text: 'BOSS面',
-  //           link: '/interview/boss/'
-  //         },
-  //         {
-  //           text: 'HR面',
-  //           link: '/interview/hr/'
-  //         }
-  //       ]
-  //     },
-  //     {
-  //       text: '简历',
-  //       items: [
-  //         {
-  //           text: '写好简历',
-  //           link: '/interview/writor/'
-  //         },
-  //         {
-  //           text: '简历模板',
-  //           link: '/interview/templates/'
-  //         }
-  //       ]
-  //     },
-  //     {
-  //       text: '公司行业',
-  //       items: [
-  //         {
-  //           text: '选择公司',
-  //           link: '/interview/company/'
-  //         },
-  //         {
-  //           text: '行业洞悉',
-  //           link: '/interview/industry/'
-  //         }
-  //       ]
-  //     }
-  //   ]
-  // },
-  // {
-  //   text: '课程',
-  //   items: [
-  //     {
-  //       text: '大前端课程',
-  //       link: 'https://class.imooc.com/sale/webfullstack'
-  //     },
-  //     {
-  //       text: '快速了解新版Vue3.0 + Vite开发',
-  //       link: 'https://www.imooc.com/learn/1245'
-  //     },
-  //     {
-  //       text: '3小时速成 Vue2.x 核心技术',
-  //       link: 'https://www.imooc.com/learn/1091'
-  //     }
-  //   ]
-  // },
   {
     text: '关于',
     items: [
@@ -440,86 +218,27 @@ const nav = [
 ]
 
 const sidebar = {
+  '/antvx6/': [
+    {
+      title: 'AntV-X6',
+      collapsable: false,
+      children: genSidebarConfig('antvx6', siderBarOptions)
+    }
+  ],
+  '/ts/': [
+    {
+      title: 'TypeScript学习',
+      collapsable: false,
+      children: genSidebarConfig('ts', siderBarOptions)
+    }
+  ],
   '/basic/': [
     {
       title: 'Node.js进阶',
       collapsable: false,
       children: genSidebarConfig('basic/node', siderBarOptions)
     }
-    // {
   ],
-  // '/project/': [
-  //   {
-  //     title: '社区PC',
-  //     collapsable: false,
-  //     children: genSidebarConfig('project/community-pc', siderBarOptions)
-  //   },
-  //   {
-  //     title: '社区管理后台',
-  //     collapsable: false,
-  //     children: genSidebarConfig('project/community-admin', siderBarOptions)
-  //   },
-  //   {
-  //     title: '社区WebApp',
-  //     collapsable: false,
-  //     children: genSidebarConfig('project/community-webapp', siderBarOptions)
-  //   },
-  //   {
-  //     title: '小程序',
-  //     collapsable: false,
-  //     children: genSidebarConfig('project/community-miniapp', siderBarOptions)
-  //   },
-  //   {
-  //     title: 'Flutter 2.0',
-  //     collapsable: false,
-  //     children: genSidebarConfig('project/community-flutter', siderBarOptions)
-  //   },
-  //   {
-  //     title: 'Electron桌面端',
-  //     collapsable: false,
-  //     children: genSidebarConfig('project/community-electron', siderBarOptions)
-  //   },
-  //   {
-  //     title: 'React世界',
-  //     collapsable: false,
-  //     children: ['react/']
-  //   }
-  // ],
-  // '/course/': [
-  //   {
-  //     title: '参与贡献',
-  //     collapsable: false,
-  //     children: genSidebarConfig('course/notes', siderBarOptions)
-  //   },
-  //   {
-  //     title: '项目说明',
-  //     collapsable: false,
-  //     children: genSidebarConfig('course/vuepress', siderBarOptions)
-  //   },
-  //   {
-  //     title: 'Pull Request教程',
-  //     collapsable: false,
-  //     children: genSidebarConfig('course/pull-request', siderBarOptions)
-  //   }
-  // ],
-  // '/about/': [
-  //   {
-  //     title: '关于我们',
-  //     collapsable: false,
-  //     // children: ['', '01-课程评价', '02-招募英才']
-  //     children: genSidebarConfig('about', { ...siderBarOptions, hasSub: false })
-  //   }
-  // ],
-  // '/designmode': [
-  //   {
-  //     title: '测试案例',
-  //     collapsable: false,
-  //     children: genSidebarConfig('designmode', {
-  //       ...siderBarOptions,
-  //       hasSub: false
-  //     })
-  //   }
-  // ],
   '/': [
     {
       title: '首页',
@@ -576,5 +295,8 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
     '@vuepress/nprogress'
     // '@snowdog/vuepress-plugin-pdf-export'
-  ]
+  ],
+  markdown: {
+    lineNumbers: true
+  }
 }

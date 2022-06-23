@@ -40,5 +40,3 @@ check.checkName().checkAge()
 // 验证年龄
 
 console.log(process.cwd())
-
-// #region snippet
