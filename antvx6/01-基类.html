@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>工厂设计模式 | 天净若风 の 前端笔记</title>
+    <title>基类 Cell | 天净若风 の 前端笔记</title>
     <meta name="generator" content="VuePress 1.9.7">
     
     <meta name="description" content="天净若风的记录前端">
@@ -11,13 +11,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     
-    <link rel="preload" href="/front-end-record/assets/css/0.styles.029aecce.css" as="style"><link rel="preload" href="/front-end-record/assets/js/app.225e9438.js" as="script"><link rel="preload" href="/front-end-record/assets/js/2.5ffe5db3.js" as="script"><link rel="preload" href="/front-end-record/assets/js/3.dc843408.js" as="script"><link rel="preload" href="/front-end-record/assets/js/18.bf7aab1e.js" as="script"><link rel="prefetch" href="/front-end-record/assets/js/10.2889e5b7.js"><link rel="prefetch" href="/front-end-record/assets/js/11.251e3db6.js"><link rel="prefetch" href="/front-end-record/assets/js/12.97178f1e.js"><link rel="prefetch" href="/front-end-record/assets/js/13.d62a1a15.js"><link rel="prefetch" href="/front-end-record/assets/js/14.a657c1cb.js"><link rel="prefetch" href="/front-end-record/assets/js/15.2cd9ff2f.js"><link rel="prefetch" href="/front-end-record/assets/js/16.b1fa9bd8.js"><link rel="prefetch" href="/front-end-record/assets/js/17.04afa75c.js"><link rel="prefetch" href="/front-end-record/assets/js/19.ce12e44e.js"><link rel="prefetch" href="/front-end-record/assets/js/20.95081682.js"><link rel="prefetch" href="/front-end-record/assets/js/21.a7b2d256.js"><link rel="prefetch" href="/front-end-record/assets/js/4.363d22c1.js"><link rel="prefetch" href="/front-end-record/assets/js/5.b833c1ca.js"><link rel="prefetch" href="/front-end-record/assets/js/6.01d96fef.js"><link rel="prefetch" href="/front-end-record/assets/js/7.79622f07.js"><link rel="prefetch" href="/front-end-record/assets/js/8.8e941835.js"><link rel="prefetch" href="/front-end-record/assets/js/9.81b04d7d.js">
+    <link rel="preload" href="/front-end-record/assets/css/0.styles.029aecce.css" as="style"><link rel="preload" href="/front-end-record/assets/js/app.225e9438.js" as="script"><link rel="preload" href="/front-end-record/assets/js/2.5ffe5db3.js" as="script"><link rel="preload" href="/front-end-record/assets/js/3.dc843408.js" as="script"><link rel="preload" href="/front-end-record/assets/js/11.251e3db6.js" as="script"><link rel="prefetch" href="/front-end-record/assets/js/10.2889e5b7.js"><link rel="prefetch" href="/front-end-record/assets/js/12.97178f1e.js"><link rel="prefetch" href="/front-end-record/assets/js/13.d62a1a15.js"><link rel="prefetch" href="/front-end-record/assets/js/14.a657c1cb.js"><link rel="prefetch" href="/front-end-record/assets/js/15.2cd9ff2f.js"><link rel="prefetch" href="/front-end-record/assets/js/16.b1fa9bd8.js"><link rel="prefetch" href="/front-end-record/assets/js/17.04afa75c.js"><link rel="prefetch" href="/front-end-record/assets/js/18.bf7aab1e.js"><link rel="prefetch" href="/front-end-record/assets/js/19.ce12e44e.js"><link rel="prefetch" href="/front-end-record/assets/js/20.95081682.js"><link rel="prefetch" href="/front-end-record/assets/js/21.a7b2d256.js"><link rel="prefetch" href="/front-end-record/assets/js/4.363d22c1.js"><link rel="prefetch" href="/front-end-record/assets/js/5.b833c1ca.js"><link rel="prefetch" href="/front-end-record/assets/js/6.01d96fef.js"><link rel="prefetch" href="/front-end-record/assets/js/7.79622f07.js"><link rel="prefetch" href="/front-end-record/assets/js/8.8e941835.js"><link rel="prefetch" href="/front-end-record/assets/js/9.81b04d7d.js">
     <link rel="stylesheet" href="/front-end-record/assets/css/0.styles.029aecce.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/front-end-record/" class="home-link router-link-active"><!----> <span class="site-name">天净若风 の 前端笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-end-record/" class="nav-link">
   首页
-</a></div><div class="nav-item"><a href="/front-end-record/antvx6/" class="nav-link">
+</a></div><div class="nav-item"><a href="/front-end-record/antvx6/" class="nav-link router-link-active">
   AntV X6
 </a></div><div class="nav-item"><a href="/front-end-record/ts/" class="nav-link">
   TypeScript
@@ -107,13 +107,13 @@
   MVVM模式
 </a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
           简介
-        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front-end-record/designmode/factory-mode/.html" class="nav-link">
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front-end-record/antvx6/.html" class="nav-link">
   专业阅读
-</a></li><li class="dropdown-subitem"><a href="/front-end-record/designmode/factory-mode/.html" class="nav-link">
+</a></li><li class="dropdown-subitem"><a href="/front-end-record/antvx6/.html" class="nav-link">
   非专业阅读
 </a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-end-record/" class="nav-link">
   首页
-</a></div><div class="nav-item"><a href="/front-end-record/antvx6/" class="nav-link">
+</a></div><div class="nav-item"><a href="/front-end-record/antvx6/" class="nav-link router-link-active">
   AntV X6
 </a></div><div class="nav-item"><a href="/front-end-record/ts/" class="nav-link">
   TypeScript
@@ -203,11 +203,19 @@
   MVVM模式
 </a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
           简介
-        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front-end-record/designmode/factory-mode/.html" class="nav-link">
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front-end-record/antvx6/.html" class="nav-link">
   专业阅读
-</a></li><li class="dropdown-subitem"><a href="/front-end-record/designmode/factory-mode/.html" class="nav-link">
+</a></li><li class="dropdown-subitem"><a href="/front-end-record/antvx6/.html" class="nav-link">
   非专业阅读
-</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>首页</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-end-record/" aria-current="page" class="sidebar-link">Home</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="工厂设计模式"><a href="#工厂设计模式" class="header-anchor">#</a> 工厂设计模式</h1></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
-    <script src="/front-end-record/assets/js/app.225e9438.js" defer></script><script src="/front-end-record/assets/js/2.5ffe5db3.js" defer></script><script src="/front-end-record/assets/js/3.dc843408.js" defer></script><script src="/front-end-record/assets/js/18.bf7aab1e.js" defer></script>
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>AntV-X6</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-end-record/antvx6/" aria-current="page" class="sidebar-link">简介</a></li><li><a href="/front-end-record/antvx6/01-基类.html" class="active sidebar-link">基类 Cell</a></li><li><a href="/front-end-record/antvx6/02-节点.html" class="sidebar-link">节点 Node</a></li><li><a href="/front-end-record/antvx6/03-边.html" class="sidebar-link">边 Edge</a></li><li><a href="/front-end-record/antvx6/04-连接桩.html" class="sidebar-link">连接桩 Port</a></li><li><a href="/front-end-record/antvx6/05-节点和边的交互.html" class="sidebar-link">节点和边的交互</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="基类-cell"><a href="#基类-cell" class="header-anchor">#</a> 基类 Cell</h1></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/front-end-record/antvx6/" class="prev router-link-active">
+        简介
+      </a></span> <span class="next"><a href="/front-end-record/antvx6/02-节点.html">
+        节点 Node
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/front-end-record/assets/js/app.225e9438.js" defer></script><script src="/front-end-record/assets/js/2.5ffe5db3.js" defer></script><script src="/front-end-record/assets/js/3.dc843408.js" defer></script><script src="/front-end-record/assets/js/11.251e3db6.js" defer></script>
   </body>
 </html>
