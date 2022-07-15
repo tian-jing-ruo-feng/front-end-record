@@ -202,16 +202,21 @@ const nav = [
     items: [
       {
         text: '简介',
-        items: [
-          {
-            text: '专业阅读',
-            link: ''
-          },
-          {
-            text: '非专业阅读',
-            link: ''
-          }
-        ]
+        link: '/about/'
+        // items: [
+        //   {
+        //     text: '个人介绍',
+        //     link: '/about/personal.md'
+        //   },
+        //   {
+        //     text: '专业阅读',
+        //     link: ''
+        //   },
+        //   {
+        //     text: '非专业阅读',
+        //     link: ''
+        //   }
+        // ]
       }
     ]
   }
@@ -237,6 +242,13 @@ const sidebar = {
       title: 'Node.js进阶',
       collapsable: false,
       children: genSidebarConfig('basic/node', siderBarOptions)
+    }
+  ],
+  '/about/': [
+    {
+      title: '简介',
+      collapsable: false,
+      children: genSidebarConfig('about', siderBarOptions)
     }
   ],
   '/': [
