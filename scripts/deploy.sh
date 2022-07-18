@@ -3,7 +3,7 @@
  # @Author: tian-jing-ruo-feng 2236117954@qq.com
  # @Date: 2022-06-20 11:25:26
  # @LastEditors: tian-jing-ruo-feng 2236117954@qq.com
- # @LastEditTime: 2022-07-19 00:03:10
+ # @LastEditTime: 2022-07-19 00:06:12
  # @FilePath: /leaning-doc/scripts/deploy.sh
  # @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 ### 
@@ -15,8 +15,8 @@ pwd
 # 查看当前目录下的文件信息
 ls -la
 # 定义远程仓库变量
-# remote=$(git config remote.origin.url)
-remote=$GIT_REMOTE
+remote=$(git config remote.origin.url)
+# remote=$GIT_REMOTE
 echo 'remote address is: '$remote
 
 # 新建发布项目目录
