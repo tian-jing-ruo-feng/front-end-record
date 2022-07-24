@@ -3,7 +3,7 @@
  # @Author: tian-jing-ruo-feng 2236117954@qq.com
  # @Date: 2022-06-20 11:25:26
  # @LastEditors: tian-jing-ruo-feng 2236117954@qq.com
- # @LastEditTime: 2022-07-24 16:30:25
+ # @LastEditTime: 2022-07-24 16:55:32
  # @FilePath: /leaning-doc/scripts/deploy.sh
  # @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 ### 
@@ -15,8 +15,8 @@ pwd
 # 查看当前目录下的文件信息
 ls -la
 # 定义远程仓库变量
-# remote=$(git config remote.origin.url)
-remote=$GIT_REMOTE
+remote=$(git config remote.origin.url)
+# remote=$GIT_REMOTE
 echo 'remote address is: '$remote
 
 
@@ -33,7 +33,7 @@ git config --global user.name "$GH_NAME" >/dev/null 2>&1
 git init
 # 同远程仓库建立关联
 # git remote add --fetch origin "$remote"
-git remote add --fetch origin "$GIT_REMOTE"
+git remote add --fetch origin "$remote"
 
 # 切换gh-pages分支
 # 验证git 是否存在gh-pages分支， 如果存在则切换 不存在则创建一个空历史分支
