@@ -12,6 +12,10 @@ const nav = [
     link: '/'
   },
   {
+    text: 'Docker',
+    link: '/docker/'
+  },
+  {
     text: 'AntV X6',
     link: '/antvx6/'
   },
@@ -228,6 +232,13 @@ const sidebar = {
       title: 'AntV-X6',
       collapsable: false,
       children: genSidebarConfig('antvx6', siderBarOptions)
+    }
+  ],
+  '/docker/': [
+    {
+      title: 'Docker',
+      collapsable: false,
+      children: genSidebarConfig('docker', siderBarOptions)
     }
   ],
   '/ts/': [
