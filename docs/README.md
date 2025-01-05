@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/index.png
+# heroImage: /img/index.png
 heroText: 天净若风 の 前端笔记
 tagline: 开始便不能停下♕
 actionText: 基础知识
@@ -15,6 +15,6 @@ features:
 footer: Made by Mr.tian with ❤️
 ---
 
-# 里程碑
+<!-- # 里程碑 -->
 
-- 2022 年 06 月 20 日 使用 VuePress 完成文档站的创建
+<!-- - 2022 年 06 月 20 日 使用 VuePress 完成文档站的创建 -->

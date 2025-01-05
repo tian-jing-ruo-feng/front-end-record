@@ -202,6 +202,19 @@ const nav = [
     ]
   },
   {
+    text: 'Pinia',
+    items: [
+      {
+        text: 'Pinia系统学习',
+        link: '/pinia/'
+      }
+    ]
+  },
+  {
+    text: '面经',
+    link: '/face-to-face/'
+  },
+  {
     text: '关于',
     items: [
       {
@@ -227,6 +240,13 @@ const nav = [
 ]
 
 const sidebar = {
+  '/face-to-face/': [
+    {
+      title: '面经',
+      collapsable: false,
+      children: genSidebarConfig('face-to-face', siderBarOptions)
+    }
+  ],
   '/antvx6/': [
     {
       title: 'AntV-X6',
@@ -239,6 +259,13 @@ const sidebar = {
       title: 'Docker',
       collapsable: false,
       children: genSidebarConfig('docker', siderBarOptions)
+    }
+  ],
+  '/pinia/': [
+    {
+      title: 'Pinia',
+      collapsable: false,
+      children: genSidebarConfig('pinia', siderBarOptions)
     }
   ],
   '/ts/': [
@@ -274,7 +301,8 @@ const sidebar = {
 module.exports = {
   title: '天净若风 の 前端笔记',
   description: '天净若风的记录前端',
-  base: process.env.NODE_ENV === 'development' ? '/' : '/front-end-record/',
+  // base: process.env.NODE_ENV === 'development' ? '/' : '/front-end-record/',
+  base: '',
   configureWebpack: {
     resolve: {
       alias: {
@@ -305,9 +333,9 @@ module.exports = {
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
     nav: nav,
-    sidebar: sidebar
+    sidebar: sidebar,
+    lastUpdated: '上次更新' // string | boolean
   },
 
   /**
@@ -316,7 +344,18 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-    '@vuepress/nprogress'
+    '@vuepress/nprogress',
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          // 不要忘了安装 moment
+          const moment = require('moment')
+          moment.locale(lang)
+          return moment(timestamp).fromNow()
+        }
+      }
+    ]
     // '@snowdog/vuepress-plugin-pdf-export'
   ],
   markdown: {
