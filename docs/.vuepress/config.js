@@ -301,8 +301,8 @@ const sidebar = {
 module.exports = {
   title: '天净若风 の 前端笔记',
   description: '天净若风的记录前端',
-  // base: process.env.NODE_ENV === 'development' ? '/' : '/front-end-record/',
-  base: '',
+  base: process.env.NODE_ENV === 'development' ? '/' : '/front-end-record/',
+  // base: '',
   configureWebpack: {
     resolve: {
       alias: {
